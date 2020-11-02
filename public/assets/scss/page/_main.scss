@@ -122,9 +122,6 @@
     background: rgba(11, 7, 45, 0.06);
   }
 
-  &__inner {
-  }
-
   &__txt-wrap {
     @include flex {
       justify-content: space-between;
@@ -155,8 +152,18 @@
   }
 }
 
+/* =================== title =================== */
+
 .title {
   &__tit {
+    &.block {
+      color: #000;
+    }
+
+    &.white {
+      color: #fff;
+    }
+
     @include font-op {
       font-size: 20px;
       font-weight: 600;
@@ -168,6 +175,14 @@
   }
 
   &__txt {
+    &.block {
+      color: #000;
+    }
+
+    &.white {
+      color: #fff;
+    }
+
     @include font-op {
       font-size: 30px;
       font-weight: 300;
@@ -176,6 +191,7 @@
   }
 }
 
+/* =================== review =================== */
 .review {
   @include flex {
     align-self: flex-end;
@@ -216,8 +232,10 @@
   }
 }
 
+/* =================== com-slide =================== */
 .com-slide {
   position: relative;
+
   &__item {
     cursor: pointer;
     box-sizing: border-box;
@@ -283,6 +301,7 @@
       @include flex {
         align-items: center;
       }
+
       @include font-op {
         font-size: 14px;
         font-weight: 400;
@@ -302,14 +321,17 @@
     &--txt-wrap {
       &-tit {
         @include ellipse(1, 1.1);
+
         @include font-op {
           font-size: 20px;
           font-weight: 600;
           line-height: 55px;
         }
       }
+
       &-txt {
         @include ellipse(5, 23px);
+
         @include font-op {
           font-size: 16px;
           line-height: 23px;
@@ -318,9 +340,11 @@
 
         margin-bottom: 16px;
       }
+
       &-heart {
         img {
         }
+
         .num {
           @include font-op {
             font-size: 14px;
@@ -338,10 +362,167 @@
     height: 55px;
     @include bg-url("img", "com-next.png", "center", "cover");
   }
+
   .swiper-button-prev {
     left: -77px;
     width: 55px;
     height: 55px;
     @include bg-url("img", "com-prev.png", "center", "cover");
   }
+}
+
+/* =================== com-card =================== */
+.com-card {
+  margin-bottom: 65px;
+
+  &__list {
+    display: flex;
+    margin: 0 -10px;
+  }
+
+  &__item {
+    position: relative;
+    z-index: 1;
+    width: 25%;
+    margin: 0 10px;
+    padding: 47px 23px;
+    background: #fff;
+    text-align: center;
+
+    &--tit {
+      @include font-op {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 32px;
+      }
+
+      margin-bottom: 14px;
+    }
+
+    &--app {
+      @include font-op {
+        font-size: 18px;
+        font-weight: 400;
+        color: #ee3b4a;
+        line-height: 1;
+      }
+
+      display: inline-block;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ee3b4a;
+      margin-bottom: 37px;
+    }
+
+    &--price {
+      @include flex {
+        align-items: center;
+      }
+
+      @include wh(230px, 56px);
+
+      @include font-op {
+        font-size: 16px;
+        font-weight: 300;
+        color: #ffffff;
+      }
+
+      margin-bottom: 37px;
+      background-image: linear-gradient(to right, #ee3b4a, #ff937a);
+      border-radius: 40px;
+      display: inline-block;
+
+      .bold {
+        @include font-op {
+          font-size: 26px;
+          font-weight: 600;
+          line-height: 56px;
+          color: #ffffff;
+          vertical-align: sub;
+        }
+
+        margin-left: 7px;
+      }
+    }
+
+    &--txt {
+      @include font-op {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #242424;
+      }
+
+      margin-bottom: 40px;
+    }
+  }
+}
+
+/* =================== labs-price =================== */
+.labs-price {
+  position: relative;
+  overflow: hidden;
+  padding-top: 71px;
+  padding-bottom: 50px;
+  background: #0b072d;
+
+  .obj1 {
+    position: absolute;
+    left: -98px;
+    bottom: -230px;
+  }
+
+  .obj2 {
+    position: absolute;
+    right: 76px;
+    bottom: 124px;
+  }
+
+  &__inner {
+    overflow: hidden;
+  }
+
+  &__tit-wrap {
+    margin-bottom: 37px;
+  }
+}
+
+/* =================== check =================== */
+.input-box {
+  .chk-icon {
+    @include wh(18px, 18px);
+    @include bg-url("img", "check-off.png");
+
+    display: inline-block;
+  }
+
+  .chk-box:checked + label.chk-icon {
+    @include wh(18px, 18px);
+    @include bg-url("img", "check-on.png", "center");
+  }
+}
+
+/* =================== btn =================== */
+.btn-sm {
+  @include wh(146px, 54px);
+
+  @include font-op {
+    font-size: 18px;
+    line-height: 54px;
+    text-align: center;
+  }
+
+  display: inline-block;
+}
+
+.btn-border-red {
+  border: 1px solid #ee3b4a;
+  color: #fff;
+}
+
+.btn-rdi-rounded {
+  border-radius: 5px;
+}
+
+.btn-wrap {
+  justify-content: center;
 }
