@@ -1,3 +1,7 @@
+html {
+  min-height: 4000px;
+}
+
 /* =================== header =================== */
 .header {
   &__inner {
@@ -54,6 +58,7 @@
 
     &:last-of-type {
       margin-right: 0;
+
       .util__item:after {
         display: none;
       }
@@ -76,8 +81,9 @@
     }
 
     position: relative;
+    transition: all 0.7s;
 
-    &--active {
+    &:hover {
       color: #ee3b4a;
     }
   }
