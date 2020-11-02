@@ -1,0 +1,67 @@
+/* =================== typo =================== */
+/* nanum square */
+@font-face {
+  font-family: "nanum";
+  font-weight: 800;
+  src: local("nanum square acEB"), url("../../fonts/nanumsquare/NanumSquare_acEB.woff") format("woff"),
+    url("../../fonts/nanumsquare/NanumSquare_acEB.ttf") format("truetype"),
+    url("../../fonts/nanumsquare/NanumSquare_acEB.otf") format("opentype");
+}
+@font-face {
+  font-family: "nanum";
+  font-weight: 600;
+  src: local("nanum square acB"), url("../../fonts/nanumsquare/NanumSquare_acB.woff") format("woff"),
+    url("../../fonts/nanumsquare/NanumSquare_acB.ttf") format("truetype"),
+    url("../../fonts/nanumsquare/NanumSquare_acB.otf") format("opentype");
+}
+@font-face {
+  font-family: "nanum";
+  font-weight: 500;
+  src: local("nanum square acR"), url("../../fonts/nanumsquare/NanumSquare_acR.woff") format("woff"),
+    url("../../fonts/nanumsquare/NanumSquare_acR.ttf") format("truetype"),
+    url("../../fonts/nanumsquare/NanumSquare_acR.otf") format("opentype");
+}
+@font-face {
+  font-family: "nanum";
+  font-weight: 300;
+  src: local("nanum square acL"), url("../../fonts/nanumsquare/NanumSquare_acL.woff") format("woff"),
+    url("../../fonts/nanumsquare/NanumSquare_acL.ttf") format("truetype"),
+    url("../../fonts/nanumsquare/NanumSquare_acL.otf") format("opentype");
+}
+
+/* open sans */
+@font-face {
+  font-family: "open sans";
+  font-weight: 800;
+  src: local("OpenSans-ExtraBold"),
+    // url("../../fonts/open_sans/OpenSans-ExtraBold.woff") format("woff"),
+    url("../../fonts/open_sans/OpenSans-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "open sans";
+  font-weight: 600;
+  src: local("OpenSans-Bold"),
+    // url("../../fonts/open_sans/OpenSans-Bold.woff") format("woff"),
+    url("../../fonts/open_sans/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "open sans";
+  font-weight: 500;
+  src: local("OpenSans-SemiBold"),
+    // url("../../fonts/open_sans/OpenSans-SemiBold.woff") format("woff"),
+    url("../../fonts/open_sans/OpenSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "open sans";
+  font-weight: 400;
+  src: local("OpenSans-Regular"),
+    // url("../../fonts/open_sans/OpenSans-Regular.woff") format("woff"),
+    url("../../fonts/open_sans/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "open sans";
+  font-weight: 300;
+  src: local("OpenSans-Light"),
+    // url("../../fonts/open_sans/OpenSans-Light.woff") format("woff"),
+    url("../../fonts/open_sans/OpenSans-Light.ttf") format("truetype");
+}

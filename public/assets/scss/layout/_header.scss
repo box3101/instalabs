@@ -1,0 +1,84 @@
+/* =================== header =================== */
+.header {
+  &__inner {
+    @include wh(100%, 100px);
+
+    max-width: 1725px;
+    position: relative;
+    background: #fff;
+  }
+}
+
+.logo {
+  @include pos-abs-center-vertical;
+  left: 0;
+}
+
+/* =================== gnb =================== */
+.gnb {
+  @include pos-abs-center-vertical;
+  @include flex;
+
+  right: 350px;
+
+  &__list {
+    margin-right: 43px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    @include font-op {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    transition: all 0.7s;
+
+    &:hover {
+      color: #ee3b4a;
+    }
+  }
+}
+
+/* =================== util =================== */
+.util {
+  @include pos-abs-center-vertical;
+  @include flex;
+  right: 0;
+
+  &__list {
+    margin-right: 22px;
+
+    &:last-of-type {
+      margin-right: 0;
+      .util__item:after {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    @include font-op {
+      font-size: 16px;
+      font-weight: 600;
+      color: #a7a7a7;
+
+      @include make-after {
+        @include pos-abs-center-vertical;
+        right: -11px;
+        width: 1px;
+        height: 14px;
+        background: #a7a7a7;
+      }
+    }
+
+    position: relative;
+
+    &--active {
+      color: #ee3b4a;
+    }
+  }
+}

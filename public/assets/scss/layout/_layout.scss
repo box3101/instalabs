@@ -1,0 +1,14 @@
+/* =================== layout =================== */
+html,
+body,
+#app {
+  height: 100%;
+}
+.wrap {
+  min-height: 100%;
+}
+.l-center {
+  max-width: 1160px;
+  width: 95%;
+  margin: 0 auto;
+}
