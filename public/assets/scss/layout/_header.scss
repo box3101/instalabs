@@ -1,7 +1,3 @@
-html {
-  min-height: 4000px;
-}
-
 /* =================== header =================== */
 .header {
   &__inner {
@@ -85,6 +81,90 @@ html {
 
     &:hover {
       color: #ee3b4a;
+    }
+  }
+}
+
+/* =================== footer =================== */
+.footer {
+  padding-top: 45px;
+  padding-bottom: 24px;
+  background: #060417;
+  &__inner {
+    &--top {
+      &-link {
+        @include font-op {
+          font-size: 14px;
+          color: #a7a7a7;
+        }
+        @include make-after {
+          @include wh(1px, 11px);
+          @include pos-abs-center-vertical;
+          right: -13px;
+
+          background: #a7a7a7;
+        }
+
+        position: relative;
+        display: inline-block;
+        margin-right: 21px;
+
+        &:last-of-type::after {
+          display: none;
+        }
+      }
+    }
+    &--mid {
+      margin-top: 32px;
+
+      &-company {
+        @include font-op {
+          font-size: 14px;
+          font-weight: 600;
+          color: #ffffff;
+          line-height: 1;
+        }
+
+        margin-bottom: 10px;
+      }
+      &-represent {
+        @include font-op {
+          font-size: 14px;
+          font-weight: 600;
+          color: #a7a7a7;
+          line-height: 1;
+        }
+        .line {
+          @include font-op {
+            font-size: 14px;
+            display: inline-block;
+            margin: 0 4px;
+            color: #a7a7a7;
+          }
+        }
+      }
+      &-txt {
+        margin-top: 10px;
+        p {
+          @include font-op {
+            font-size: 14px;
+            color: #a7a7a7;
+            margin-top: 5px;
+          }
+        }
+        p.last {
+          margin-top: 15px;
+        }
+      }
+    }
+    &--copy {
+      @include font-op {
+        font-size: 14px;
+        line-height: 1;
+        color: #676767;
+      }
+
+      margin-top: 27px;
     }
   }
 }
