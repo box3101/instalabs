@@ -79,14 +79,14 @@
 /* =================== check =================== */
 .input-box {
   .chk-icon {
-    @include wh(18px, 18px);
+    @include wh(1.125rem, 1.125rem);
     @include bg-url("img", "check-off.png");
 
     display: inline-block;
   }
 
   .chk-box:checked + label.chk-icon {
-    @include wh(18px, 18px);
+    @include wh(1.125rem, 1.125rem);
     @include bg-url("img", "check-on.png", "center");
   }
 }

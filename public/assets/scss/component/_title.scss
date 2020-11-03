@@ -11,13 +11,13 @@
     }
 
     @include font-op {
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 600;
-      line-height: 27px;
+      line-height: 1.6875rem;
       color: #ee3b4a;
     }
 
-    margin-bottom: 21px;
+    margin-bottom: 1.3125rem;
   }
 
   &__txt {
@@ -30,9 +30,9 @@
     }
 
     @include font-op {
-      font-size: 30px;
+      font-size: 1.875rem;
       font-weight: 300;
-      line-height: 40px;
+      line-height: 2.5rem;
     }
   }
 }

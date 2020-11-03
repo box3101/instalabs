@@ -174,11 +174,11 @@
 /* =================== btn =================== */
 
 .btn-sm {
-  @include wh(146px, 54px);
+  @include wh(9.125rem, 3.375rem);
 
   @include font-op {
-    font-size: 18px;
-    line-height: 54px;
+    font-size: 1.125rem;
+    line-height: 3.375rem;
     text-align: center;
   }
 
@@ -193,12 +193,12 @@
 }
 
 .btn-border-red {
-  border: 1px solid #ee3b4a;
+  border: 0.0625rem solid #ee3b4a;
   color: #fff;
 }
 
 .btn-rdi-rounded {
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 
 .btn-wrap {

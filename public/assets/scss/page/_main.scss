@@ -2,9 +2,9 @@
 .visual {
   &__inner {
     @include bg-url("img", "bg-visual.png", "center", "cover");
-    height: 847px;
+    height: 52.9375rem;
     position: relative;
-    max-width: 1725px;
+    max-width: 107.8125rem;
 
     @include make-before {
       position: absolute;
@@ -18,7 +18,7 @@
 
   &__obj {
     position: absolute;
-    top: 50px;
+    top: 3.125rem;
     left: 0;
 
     img {
@@ -27,7 +27,7 @@
   }
 
   &__slide-bg {
-    @include wh(100%, 440px);
+    @include wh(100%, 27.5rem);
 
     position: relative;
     background: #ee3b4a;
@@ -40,24 +40,24 @@
 
     .main-slide-next {
       right: 20.2%;
-      width: 55px;
-      height: 55px;
-      margin-top: -50px;
+      width: 3.4375rem;
+      height: 3.4375rem;
+      margin-top: -3.125rem;
       @include bg-url("img", "slide-right.png", "center", "cover");
     }
 
     .main-slide-prev {
       left: 20.2%;
-      width: 55px;
-      height: 55px;
-      margin-top: -50px;
+      width: 3.4375rem;
+      height: 3.4375rem;
+      margin-top: -3.125rem;
       @include bg-url("img", "slide-left.png", "center", "cover");
     }
   }
 
   &__slide--item {
-    width: 174px !important;
-    margin: 0 11.5px;
+    width: 10.875rem !important;
+    margin: 0 0.7188rem;
     opacity: 0.2;
     position: relative;
     z-index: -1;
@@ -70,12 +70,12 @@
 
     &-top {
       position: relative;
-      height: 30px;
+      height: 1.875rem;
       background: #fff;
 
       .vis-top-icon {
         position: absolute;
-        left: 7px;
+        left: 0.4375rem;
         @include pos-abs-center-vertical;
       }
 
@@ -86,14 +86,14 @@
 
       .vis-top-icon2 {
         position: absolute;
-        right: 7px;
+        right: 0.4375rem;
         @include pos-abs-center-vertical;
       }
     }
 
     &-img {
-      width: 174px;
-      height: 205px;
+      width: 10.875rem;
+      height: 12.8125rem;
 
       img {
         width: 100%;
@@ -102,12 +102,12 @@
 
     &-bot {
       position: relative;
-      padding: 9px 7px;
+      padding: 0.5625rem 0.4375rem;
       background: #fff;
 
       .vis-top-icon3 {
         position: relative;
-        top: -2px;
+        top: -0.125rem;
       }
 
       .vis-top-icon4 {
@@ -116,15 +116,15 @@
 
       .is-txt {
         @include font-op {
-          margin-top: 4px;
-          font-size: 13px;
+          margin-top: 0.25rem;
+          font-size: 0.8125rem;
           font-weight: 500;
         }
 
         .is-num {
           @include font-op {
-            margin-top: 4px;
-            font-size: 13px;
+            margin-top: 0.25rem;
+            font-size: 0.8125rem;
             font-weight: 500;
           }
         }
@@ -132,38 +132,38 @@
     }
 
     &-tag {
-      margin-top: 13px;
+      margin-top: 0.8125rem;
 
       .is-txt {
         @include font-op {
-          font-size: 16px;
+          font-size: 1rem;
           font-weight: 500;
-          line-height: 19px;
+          line-height: 1.1875rem;
           color: #ffffff;
         }
 
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
       }
 
       .is-tag {
         @include font-op {
-          font-size: 13px;
-          line-height: 22px;
+          font-size: 0.8125rem;
+          line-height: 1.375rem;
           text-align: center;
         }
 
         display: inline-block;
-        width: 66px;
-        height: 24px;
+        width: 4.125rem;
+        height: 1.5rem;
         background: #ffffff;
-        border-radius: 15px;
+        border-radius: 0.9375rem;
 
         &.on {
           position: relative;
-          top: 1px;
+          top: 0.0625rem;
           box-sizing: border-box;
           background: transparent;
-          border: 1px solid #fff;
+          border: 0.0625rem solid #fff;
           color: #ffffff;
         }
       }
@@ -173,45 +173,45 @@
   &__txt-wrap {
     position: relative;
     z-index: 10;
-    padding-left: 280px;
-    padding-top: 50px;
+    padding-left: 17.5rem;
+    padding-top: 3.125rem;
 
     &--txt {
       @include font-op {
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: 300;
-        line-height: 55px;
+        line-height: 3.4375rem;
         color: #ffffff;
       }
 
-      margin-bottom: 11px;
+      margin-bottom: 0.6875rem;
     }
 
     &--tit {
       @include font-op {
-        font-size: 60px;
+        font-size: 3.75rem;
         font-weight: 600;
         color: #ffffff;
-        line-height: 82px;
+        line-height: 5.125rem;
       }
 
       @include make-after {
         @include pos-abs-center-horizontal;
-        bottom: 35px;
-        margin-left: 90px;
-        @include wh(837px, 1px);
+        bottom: 2.1875rem;
+        margin-left: 5.625rem;
+        @include wh(52.3125rem, 0.0625rem);
         background: #ffffff;
         opacity: 0.2;
       }
 
       position: relative;
-      margin-bottom: 48px;
+      margin-bottom: 3rem;
     }
 
     &--scroll {
       @include font-op {
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 0.875rem;
+        line-height: 1.1875rem;
         color: #fff;
       }
     }
@@ -221,15 +221,15 @@
 /* =================== best-review =================== */
 .best-review {
   position: relative;
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-top: 4.375rem;
+  padding-bottom: 3.125rem;
 
   @include make-after {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 445px;
+    height: 27.8125rem;
     background: rgba(11, 7, 45, 0.06);
   }
 
@@ -238,8 +238,8 @@
 
     @include make-before {
       @include pos-abs-center-horizontal;
-      bottom: 18px;
-      @include wh(482px, 1px);
+      bottom: 1.125rem;
+      @include wh(30.125rem, 0.0625rem);
 
       background: #c5c5c5;
       opacity: 0.5;
@@ -250,7 +250,7 @@
     }
 
     position: relative;
-    margin-bottom: 37px;
+    margin-bottom: 2.3125rem;
   }
 
   &__menu-wrap {
@@ -258,11 +258,11 @@
       align-items: center;
     }
 
-    margin-bottom: 33px;
+    margin-bottom: 2.0625rem;
   }
 
   &__item {
-    margin-right: 12px;
+    margin-right: 0.75rem;
 
     &:last-of-type {
       margin-right: 0;
@@ -278,20 +278,20 @@
 .labs-price {
   position: relative;
   overflow: hidden;
-  padding-top: 71px;
-  padding-bottom: 50px;
+  padding-top: 4.4375rem;
+  padding-bottom: 3.125rem;
   background: #0b072d;
 
   .obj1 {
     position: absolute;
-    left: -98px;
-    bottom: -230px;
+    left: -6.125rem;
+    bottom: -14.375rem;
   }
 
   .obj2 {
     position: absolute;
-    right: 76px;
-    bottom: 124px;
+    right: 4.75rem;
+    bottom: 7.75rem;
   }
 
   &__inner {
@@ -299,26 +299,26 @@
   }
 
   &__tit-wrap {
-    margin-bottom: 37px;
+    margin-bottom: 2.3125rem;
   }
 }
 
 /* =================== labs-people =================== */
 .labs-people {
-  padding-top: 71px;
-  padding-bottom: 50px;
+  padding-top: 4.4375rem;
+  padding-bottom: 3.125rem;
 
   &__card {
     @include flex;
 
-    height: 401px;
-    margin: 0 -10px;
-    margin-top: 37px;
+    height: 25.0625rem;
+    margin: 0 -0.625rem;
+    margin-top: 2.3125rem;
   }
 
   &__item {
-    @include wh(25%, 401px);
-    margin: 0 10px;
+    @include wh(25%, 25.0625rem);
+    margin: 0 0.625rem;
 
     &:nth-of-type(1) {
       @include bg-url("img", "labs-people__card01.png");
@@ -369,14 +369,14 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 52px;
+    bottom: 3.25rem;
     text-align: center;
 
     &-txt {
       @include font-op {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 300;
-        line-height: 24px;
+        line-height: 1.5rem;
         color: #ffffff;
       }
 
@@ -386,14 +386,14 @@
 
     &-tit {
       @include font-op {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1;
         color: #ffffff;
       }
 
-      margin-top: 18px;
-      padding-bottom: 5px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      margin-top: 1.125rem;
+      padding-bottom: 0.3125rem;
+      border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.5);
       display: inline-block;
     }
   }
@@ -401,12 +401,12 @@
 
 /* =================== comunity =================== */
 .community {
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-top: 4.375rem;
+  padding-bottom: 3.125rem;
   background: rgba(11, 7, 45, 0.06);
 
   &__info {
-    padding: 27px 31px;
+    padding: 1.6875rem 1.9375rem;
     background: #fff;
   }
 
@@ -421,5 +421,22 @@
       top: 0;
       right: 0;
     }
+  }
+}
+
+@include media(web) {
+  html {
+    font-size: 14px;
+  }
+}
+@include media(tab) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@include media(mb) {
+  html {
+    font-size: 10px;
   }
 }

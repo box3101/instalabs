@@ -1,12 +1,12 @@
 /* =================== com-table =================== */
 
 .com-table {
-  margin-top: 50px;
-  border-top: 1px solid #c5c5c5;
+  margin-top: 3.125rem;
+  border-top: 0.0625rem solid #c5c5c5;
 
   tr {
-    height: 85px;
-    border-bottom: 1px solid rgba(197, 197, 197, 0.5);
+    height: 5.3125rem;
+    border-bottom: 0.0625rem solid rgba(197, 197, 197, 0.5);
 
     td {
       text-align: center;
@@ -15,42 +15,42 @@
 
       &.date {
         @include font-op {
-          font-size: 18px;
+          font-size: 1.125rem;
           color: #464646;
         }
 
-        width: 140px;
+        width: 8.75rem;
       }
 
       &.heart {
         @include font-op {
-          font-size: 18px;
+          font-size: 1.125rem;
           color: #a7a7a7;
         }
 
-        width: 120px;
+        width: 7.5rem;
       }
 
       &.in-txt {
         @include font-op {
-          font-size: 18px;
+          font-size: 1.125rem;
           color: #464646;
         }
 
-        width: 890px;
+        width: 55.625rem;
         text-align: left;
-        padding-left: 30px;
+        padding-left: 1.875rem;
         box-sizing: border-box;
       }
 
       &.id {
         @include font-op {
-          font-size: 18px;
+          font-size: 1.125rem;
           color: #a7a7a7;
-          letter-spacing: -2px;
+          letter-spacing: -0.125rem;
         }
 
-        width: 80px;
+        width: 5rem;
       }
     }
   }
