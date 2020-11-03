@@ -39,31 +39,134 @@
     transform: translateY(-50%);
 
     .main-slide-next {
-      right: 20.8%;
+      right: 20.2%;
       width: 55px;
       height: 55px;
+      margin-top: -50px;
       @include bg-url("img", "slide-right.png", "center", "cover");
     }
 
     .main-slide-prev {
-      left: 20.8%;
+      left: 20.2%;
       width: 55px;
       height: 55px;
+      margin-top: -50px;
       @include bg-url("img", "slide-left.png", "center", "cover");
     }
   }
 
-  &__slide--list {
-  }
-
   &__slide--item {
-    height: 348px;
-    background: #000;
+    width: 174px !important;
+    margin: 0 11.5px;
     opacity: 0.2;
+    position: relative;
+    z-index: -1;
+
     &.swiper-slide-active,
     &.swiper-slide-next,
     &.swiper-slide-prev {
       opacity: 1;
+    }
+
+    &-top {
+      position: relative;
+      height: 30px;
+      background: #fff;
+
+      .vis-top-icon {
+        position: absolute;
+        left: 7px;
+        @include pos-abs-center-vertical;
+      }
+
+      .vis-top-logo {
+        @include pos-abs-center;
+        top: 10x;
+      }
+
+      .vis-top-icon2 {
+        position: absolute;
+        right: 7px;
+        @include pos-abs-center-vertical;
+      }
+    }
+
+    &-img {
+      width: 174px;
+      height: 205px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-bot {
+      position: relative;
+      padding: 9px 7px;
+      background: #fff;
+
+      .vis-top-icon3 {
+        position: relative;
+        top: -2px;
+      }
+
+      .vis-top-icon4 {
+        float: right;
+      }
+
+      .is-txt {
+        @include font-op {
+          margin-top: 4px;
+          font-size: 13px;
+          font-weight: 500;
+        }
+
+        .is-num {
+          @include font-op {
+            margin-top: 4px;
+            font-size: 13px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    &-tag {
+      margin-top: 13px;
+
+      .is-txt {
+        @include font-op {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19px;
+          color: #ffffff;
+        }
+
+        margin-bottom: 8px;
+      }
+
+      .is-tag {
+        @include font-op {
+          font-size: 13px;
+          line-height: 22px;
+          text-align: center;
+        }
+
+        display: inline-block;
+        width: 66px;
+        height: 24px;
+        background: #ffffff;
+        border-radius: 15px;
+
+        &.on {
+          position: relative;
+          top: 1px;
+          box-sizing: border-box;
+          background: transparent;
+          border: 1px solid #fff;
+          color: #ffffff;
+        }
+      }
     }
   }
 
