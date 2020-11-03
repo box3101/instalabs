@@ -1,0 +1,38 @@
+/* =================== title =================== */
+
+.title {
+  &__tit {
+    &.block {
+      color: #000;
+    }
+
+    &.white {
+      color: #fff;
+    }
+
+    @include font-op {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 27px;
+      color: #ee3b4a;
+    }
+
+    margin-bottom: 21px;
+  }
+
+  &__txt {
+    &.block {
+      color: #000;
+    }
+
+    &.white {
+      color: #fff;
+    }
+
+    @include font-op {
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 40px;
+    }
+  }
+}

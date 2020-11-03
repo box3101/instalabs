@@ -1,0 +1,57 @@
+/* =================== com-table =================== */
+
+.com-table {
+  margin-top: 50px;
+  border-top: 1px solid #c5c5c5;
+
+  tr {
+    height: 85px;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.5);
+
+    td {
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+
+      &.date {
+        @include font-op {
+          font-size: 18px;
+          color: #464646;
+        }
+
+        width: 140px;
+      }
+
+      &.heart {
+        @include font-op {
+          font-size: 18px;
+          color: #a7a7a7;
+        }
+
+        width: 120px;
+      }
+
+      &.in-txt {
+        @include font-op {
+          font-size: 18px;
+          color: #464646;
+        }
+
+        width: 890px;
+        text-align: left;
+        padding-left: 30px;
+        box-sizing: border-box;
+      }
+
+      &.id {
+        @include font-op {
+          font-size: 18px;
+          color: #a7a7a7;
+          letter-spacing: -2px;
+        }
+
+        width: 80px;
+      }
+    }
+  }
+}

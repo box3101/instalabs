@@ -170,3 +170,37 @@
 .btn-kakao {
   color: #2b1718;
 }
+
+/* =================== btn =================== */
+
+.btn-sm {
+  @include wh(146px, 54px);
+
+  @include font-op {
+    font-size: 18px;
+    line-height: 54px;
+    text-align: center;
+  }
+
+  display: inline-block;
+  transition: all 0.4s;
+
+  &:hover {
+    transition: all 0.4s;
+
+    background-image: linear-gradient(105deg, #ee3b4a 79%, #ed8e78 100%);
+  }
+}
+
+.btn-border-red {
+  border: 1px solid #ee3b4a;
+  color: #fff;
+}
+
+.btn-rdi-rounded {
+  border-radius: 5px;
+}
+
+.btn-wrap {
+  justify-content: center;
+}
