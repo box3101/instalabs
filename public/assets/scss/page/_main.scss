@@ -31,15 +31,7 @@
 
     position: relative;
     background: #ee3b4a;
-
-    // @include make-after {
-    //   @include wh(12%, 100%);
-    //   @include absolute($t: 0, $r: 0);
-
-    //   z-index: 100;
-    //   background: #fafafa;
-    //   opacity: 0.9;
-    // }
+    overflow: hidden;
   }
 
   &__slide-wrap {
@@ -47,14 +39,14 @@
     transform: translateY(-50%);
 
     .main-slide-next {
-      right: 254px;
+      right: 20.8%;
       width: 55px;
       height: 55px;
       @include bg-url("img", "slide-right.png", "center", "cover");
     }
 
     .main-slide-prev {
-      left: 254px;
+      left: 20.8%;
       width: 55px;
       height: 55px;
       @include bg-url("img", "slide-left.png", "center", "cover");

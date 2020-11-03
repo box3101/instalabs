@@ -2,7 +2,7 @@
 (function () {
   new Swiper(".main-visual", {
     slidesPerView: 9,
-    spaceBetween: 23,
+    spaceBetween: 24,
     loop: true,
     centeredSlides: true,
     navigation: {
